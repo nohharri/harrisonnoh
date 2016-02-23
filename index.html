@@ -26,8 +26,7 @@ title: Harrison Noh
         </div>
       {% endif %}
       <div class="story">
-        {{ base }}
-        <a href="{{ base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
+        <a href="{{ site.base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
         <div>
           <b>{{ post.date | date: "%b %-d, %Y" }}</b>
         </div>
