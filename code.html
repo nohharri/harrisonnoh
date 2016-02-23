@@ -21,7 +21,7 @@ permalink: /code/
         </div>
       {% endif %}
       <div class="story">
-        <a href="{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
+        <a href="{{ site.base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
         <div>
           <b>{{ post.date | date: "%b %-d, %Y" }}</b>
         </div>
