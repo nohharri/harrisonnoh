@@ -10,6 +10,8 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #2f2f2f;
 	overflow-x: hidden;
+	overflow: scroll;
+	height: 100%;
 }
 
 #footer {
