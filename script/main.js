@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-
+if(window.innerWidth > 800 && window.innerHeight > 600) {
 	count = 0;
 	string = [
 		"Hi, my name is Harrison Noh.",
@@ -121,6 +121,8 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 			//user has reached bottom
+
 		}
 	});
+}
 });
