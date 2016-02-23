@@ -365,8 +365,42 @@ a:visited {
 
 .paragraph {
 	font-size: 18px;
-	
+
 	margin: 0 auto;
 	width: 90%;
 	max-width: 900px;
+}
+
+@media screen and (max-width: 1010px) {
+    .categories-container {
+    	display: none;
+    }
+    .main-container {
+    	width: 80%;
+    }
+    .story-container {
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .categories-container {
+    	display: none;
+    }
+    .main-container {
+    	margin-top: 50px;
+    	width: 100%;
+    }
+    .story-container {
+    	width: 100%;
+    }
+    #cover {
+    	display: none;
+    }
+    #header {
+    	height: 90px;
+    }
+    #logo {
+    	text-align: center;
+    }
 }
