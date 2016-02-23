@@ -1,2 +1,0 @@
-# harrisonnoh
-my personal website
