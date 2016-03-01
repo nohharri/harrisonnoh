@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-if(window.innerWidth > 800 && window.innerHeight > 600) {
 	count = 0;
 	string = [
 		"Hi, my name is Harrison Noh.",
@@ -124,5 +123,4 @@ if(window.innerWidth > 800 && window.innerHeight > 600) {
 
 		}
 	});
-}
 });
