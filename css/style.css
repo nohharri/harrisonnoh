@@ -383,6 +383,11 @@ a:visited {
     .story-container {
     	width: 100%;
     }
+    h1 {
+    	padding-top: 30px;
+    	font-size: 50px;
+    	text-align: center;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -403,6 +408,11 @@ a:visited {
     	height: 90px;
     }
     #logo {
+    	text-align: center;
+    }
+    h1 {
+    	padding-top: 30px;
+    	font-size: 50px;
     	text-align: center;
     }
 }
