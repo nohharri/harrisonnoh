@@ -19,8 +19,23 @@ permalink: /post/
 </article>-->
 
 <div>
+	{% if page.img %}
+		<div id='cover-photo' style="
+	              background: url({{ page.img }}) no-repeat center center; 
+	              -webkit-background-size: cover;
+	              -moz-background-size: cover;
+	              -o-background-size: cover;
+	              background-size: cover;
+	              color: #fff">
+			<h1 style='padding-left: 4px;'>{{ page.title }}</h1>
+		</div>
+	{% else %}
+		<div>
+			<h1 style='color: #fff'>{{ page.title }}</h1>
+		</div>
+	{% endif %}
 	<div class='paragraph'>
-		<h1>{{ page.title }}</h1>
+		
 		<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
 	</div>
 
