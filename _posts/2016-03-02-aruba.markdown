@@ -4,7 +4,7 @@ title:  "Aruba!!!"
 date:   2016-03-02 01:10:00 -0500
 categories: review
 img: /img/aruba15.jpg
-short_description: During my last spring break, I went to spring break. Here is my amazing review.
+short_description: During my last spring break, I went to Aruba. Here is my amazing review.
 ---
 
 <div class='paragraph'>

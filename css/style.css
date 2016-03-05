@@ -308,6 +308,23 @@ a:visited {
 	cursor: pointer;
 }
 
+.view-gallery {
+	width: 180px;
+	margin: 30px auto 20px auto;
+	background-color: #e2e2e2;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.view-gallery:hover {
+	color: #fff;
+	background-color: #247cff;
+}
+
 .play-game:hover {
 	color: #fff;
 	background-color: #c220c4;
