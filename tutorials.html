@@ -10,7 +10,7 @@ permalink: /tutorials/
     <div>
       <h2 style="margin-left: 10px;">Blog</h2>
     </div>
-    {% for post in site.posts limit:20 %}
+    {% for post in site.categories.tutorials limit:20 %}
       {% if post.img %}
         <div class="post-img" style="
               background: url({{ post.img }}) no-repeat center center; 
