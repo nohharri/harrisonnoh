@@ -121,6 +121,6 @@ This means the list does not terminate and there could be a list that loops back
 </pre>
 
 <h2>Remove Duplicates in an Unsorted List.</h2>
-
+Best way to remove duplicates is a hash map. For this question, we should take the fact there is no primitive data type we can take advantage of.
 
 </div>
