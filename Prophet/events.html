@@ -1,0 +1,36 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="events.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div>
+      <header style="position: fixed;">
+        <div id="header-container">
+          events
+        </div>
+        <div>
+          <a href="user.html"><span style="top: -25px; font-size: 30px; left: 10px;" class="glyphicon glyphicon-user"></span></a>
+          <span style="top: -30px; font-size: 40px; right: 10px; float: right;" class="glyphicon glyphicon-cog"></span>
+        </div>
+      </header>
+      <div id="events">
+      </div>
+    </div>
+
+    <script id="hidden-template" type="text/x-custom-template">
+        <div class="element">
+          <div class="title">
+            <h1></h1>
+            <img class="event-img" src="">
+            <div class="event-price"></div>
+          </div>
+        </div>
+    </script>
+  </body>
+</html>

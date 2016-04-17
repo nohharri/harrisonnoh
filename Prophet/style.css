@@ -1,0 +1,202 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+  overflow-x: hidden;
+  color: #343434;
+}
+
+#prophet-logo {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+#loginsignincontainer {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -70px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 70px;
+}
+.site-footer {
+}
+
+#login_page {
+  height: 100%;
+  background: url("http://www.lancefarrow.ca/wp-content/uploads/2014/06/triangle-background-17.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#login {
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #414141;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  top: 200px;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+}
+
+#signup {
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #3eb1d6;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+}
+
+header {
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  height: 80px;
+  background-color: #3eb1d6;
+}
+
+.event-img-container {
+  overflow: hidden;
+  height: 180px;
+}
+
+.element {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#events {
+  padding-top: 80px;
+}
+
+#event-data {
+  padding-top: 80px;
+}
+
+#header-container {
+  text-align: center;
+  padding-top: 25px;
+}
+
+#email-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.form-input {
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  height: 30px;
+  margin-top: 40px;
+  width: 100%:
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #999999;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.button {
+  padding-top: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #3eb1d6;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  top: 200px;
+  text-align: center;
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+#error-login {
+  color: #e63a23;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#facebook {
+  background-color: #3b5998;
+}
+
+#log-in {
+
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #3eb1d6;
+}
+
+.event-title {
+  font-family: 'Oswald', sans-serif;
+  color: #3eb1d6;
+}
+
+.event-img {
+  width: 100%;
+}
+
+.event-price {
+  font-family: 'Oswald', sans-serif;
+  color: #5ec526;
+  font-size: 40px;
+}
+
+#buy-sell-container {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+}
+
+#buy {
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  font-size: 40px;
+  height: 60px;
+  background-color: #3eb1d6;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#sell {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  width: 100%%;
+  height: 60px;
+  background-color: #2d5db7;
+}
