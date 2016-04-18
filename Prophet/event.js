@@ -43,7 +43,7 @@ $(document).ready(function() {
     var user_sells = 0;
     for(var i = 0; i < shares; i++) {
       price = parseFloat(price) - 0.015;
-      user_sells -= price;
+      user_sells += price;
     }
     price = price.toFixed(2);
     new Firebase("https://prophet411.firebaseio.com/events/" + key).update({
