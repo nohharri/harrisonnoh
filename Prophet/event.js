@@ -30,7 +30,7 @@ $(document).ready(function() {
       price = parseFloat(price) + 0.015;
       user_pays += price;
     }
-    price = price.toFixed(2);
+    //price = price.toFixed(2);
     new Firebase("https://prophet411.firebaseio.com/events/" + key).update({
        curr_price: price
     });
