@@ -6,4 +6,8 @@ $(document).ready(function() {
   }, function (errorObject) {
     console.log("The read failed: " + errorObject.code);
   });
+
+  $("#check-history").click(function() {
+  	$("#history").css({ display: 'initial' });
+  });
 });
