@@ -11,26 +11,23 @@ $(document).ready(function() {
   });
   // Attach an asynchronous callback to read the data at our posts reference
   ref.on("value", function(snapshot) {
-    console.log(snapshot.val());
     key = snapshot.key();
     price = snapshot.val().curr_price;
     $(".event-img-container").append('<img class="event-img" src="' + snapshot.val().imgurl +'">');
     $("#event-data").append('<div style="text-align: center"><h1 class="event-title">'+snapshot.val().title+'</h1></div>');
     $("#event-data").append('<div style="font-size: 80px; text-align: center" class="event-price">$'+ snapshot.val().curr_price +'</div>');
   }, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
   });
 
   $("#buy").click(function() {
-    var shares = prompt("How many shares would you like to buy?", 1);
-    console.log(shares);
+    var shares = $("#shares-input").val();
     var user_pays = 0;
     for(var i = 0; i < shares; i++) {
-      console.log("printing" + price);
       price = parseFloat(price) + 0.015;
       user_pays += price;
     }
-    //price = price.toFixed(2);
+    price = parseFloat(price);
+    price = price.toFixed(2);
     new Firebase("https://prophet411.firebaseio.com/events/" + key).update({
        curr_price: price
     });
@@ -42,7 +39,7 @@ $(document).ready(function() {
   });
 
   $("#sell").click(function() {
-    var shares = prompt("How many shares would you like to sell?", 1);
+    var shares = $("#shares-input").val();
     var user_sells = 0;
     for(var i = 0; i < shares; i++) {
       price = parseFloat(price) - 0.015;
