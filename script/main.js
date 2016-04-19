@@ -5,14 +5,9 @@ $(document).ready(function() {
 		"Hi, my name is Harrison Noh.",
 		"I am a coder and a designer.",
 		"I currently attend the University of Michigan.",
-		"I am looking for internships for Summer 2016.",
+		"I am looking for fulltime Opportunities in Software Development.",
 		"I enjoy combining cool UIs with  programming.",
-		"That's how I made this nifty animation loop.",
-		"My website is significantly better than James.",
-		"Get on my level James.",
-		"Get on my level.",
-		"I like to ball.",
-		"I'm a sneakerhead."
+		"That's how I made this nifty animation loop."
 	];
 	textJump("#text-jump", string[count]);
 	triangles();
@@ -91,7 +86,11 @@ $(document).ready(function() {
 	//$('.categories-container').height($('.story-container').height());
 
 	(function categoriesScroll() {
-		$(window).scroll(function() {
+		$(window).scroll(adjust);
+		$(window).resize(adjust);
+	})();
+
+	function adjust() {
 			var footerTop = $('#footer').offset().top;
 			var scrollTop = $(window).scrollTop();
 			if(scrollTop >= top) {
@@ -110,12 +109,7 @@ $(document).ready(function() {
 				$('.categories-container').css({position: "absolute", bottom: 0 })
 				//conditional that checks when bottom has been reached
 			}
-		});
-	})();
-
-	(function resize() {
-		console.log("hello" + $(document).height());
-	})();
+		}
 
 	$(window).scroll(function() {
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
