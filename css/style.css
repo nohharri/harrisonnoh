@@ -69,7 +69,10 @@ h1 {
 #cover-text-container {
 	position: absolute;
 	margin-top: 10px;
-	margin-left: 10px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	width: 700px;
 	overflow-x: hidden;
 }
@@ -426,6 +429,17 @@ pre {
 	margin: 0 auto;
 	width: 90%;
 	max-width: 900px;
+}
+
+.story-frame {
+	background-color: #fff;
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+-webkit-box-shadow: 0px 0px 1px 1px rgba(235,235,235,1);
+-moz-box-shadow: 0px 0px 1px 1px rgba(235,235,235,1);
+box-shadow: 0px 0px 1px 1px rgba(235,235,235,1);
 }
 
 @media screen and (max-width: 1010px) {

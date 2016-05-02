@@ -1,5 +1,6 @@
-
 $(document).ready(function() {
+
+	/*
 	count = 0;
 	string = [
 		"Hi, my name is Harrison Noh.",
@@ -80,7 +81,7 @@ $(document).ready(function() {
 		});
 		$("#cover").append(triangle);
 	}
-	
+	*/
 	var top = $('.categories-container').offset().top - 60 + 40;
 
 	//$('.categories-container').height($('.story-container').height());

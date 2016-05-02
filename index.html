@@ -16,24 +16,26 @@ title: Harrison Noh
       <h2 style="margin-left: 4px;">Latest Posts</h2>
     </div>
     {% for post in site.posts limit:10 %}
-      {% if post.img %}
-        <div class="post-img" style="
-              background: url({{ post.img }}) no-repeat center center; 
-              -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover;">
+        <div class="story-frame">
+          {% if post.img %}
+            <div class="post-img" style="
+                  background: url({{ post.img }}) no-repeat center center; 
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;">
+            </div>
+          {% endif %}
+          <div class="story">
+            <a href="{{ site.base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
+            <div>
+              <b>{{ post.date | date: "%b %-d, %Y" }}</b>
+            </div>
+            <div style="color: #8e8e8e;">
+              {{ post.short_description }}
+            </div>
+          </div>
         </div>
-      {% endif %}
-      <div class="story">
-        <a href="{{ site.base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
-        <div>
-          <b>{{ post.date | date: "%b %-d, %Y" }}</b>
-        </div>
-        <div style="color: #8e8e8e;">
-          {{ post.short_description }}
-        </div>
-      </div>
     {% endfor %}
   </div>
 
@@ -42,4 +44,4 @@ title: Harrison Noh
   </div>
 
 <div style="clear: both;"></div> 
-
+<script src="{{ site.base}}/script/main.js"></script>
