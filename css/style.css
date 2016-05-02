@@ -378,6 +378,7 @@ pre {
 }
 
 .story-title {
+	text-transform: uppercase;
 	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
 }
