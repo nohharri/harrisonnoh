@@ -55,9 +55,14 @@ body {
 
 #cover {
 	width: 100%;
-	height: 500px;
+	height: 800px;
 	position: relative;
 	overflow-x: hidden;
+	background: url(../img/friends.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 h1 {
@@ -170,7 +175,7 @@ h1 {
 }
 
 .main-container {
-	margin: 0 auto;
+	margin: 100px auto;
 	width: 1010px;
 	position: relative;
 }
@@ -378,9 +383,12 @@ pre {
 }
 
 .story-title {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .story-title:hover {
