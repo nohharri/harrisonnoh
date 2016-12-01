@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    background-color: $grey-color-light;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -47,8 +48,6 @@ img {
     vertical-align: middle;
 }
 
-
-
 /**
  * Figures
  */
@@ -58,6 +57,10 @@ figure > img {
 
 figcaption {
     font-size: $small-font-size;
+}
+
+hr {
+    border-top: $grey-color;
 }
 
 
@@ -78,33 +81,16 @@ li {
 
 
 
+
+
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    font-family: $heading-font;
+    text-transform: uppercase;
 }
-
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
-
 
 /**
  * Blockquotes
@@ -204,3 +190,17 @@ pre {
         }
     }
 }
+
+// Harrison Code
+a {
+    text-decoration: none;
+    &:hover {
+        color: $pink-color;    
+    }
+    &:visited {
+
+    }
+}
+
+
+

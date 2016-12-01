@@ -3,48 +3,39 @@ layout: default
 title: Harrison Noh
 ---
 
-<div id="cover">
-  <div id="cover-text-container">
-    <h1 style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #fff; padding-top: 250px;">Site is under Construction!</h1>
-  </div>
-</div>
-<div class="poly-bg-top">
-  <h2 style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 30px; padding-top: 15px; color: #fff;">What's New</h2>
-</div>
-
 <div class="main-container">
-  <div class="story-container">
-    <div>
-      <h2 style="margin-left: 4px;  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;">Latest Posts</h2>
+  <div style=" width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; margin: 0 auto">
+    <img src="https://scontent.fdet1-1.fna.fbcdn.net/v/t1.0-9/13524455_10209547739786354_7600893869743228876_n.jpg?oh=eea86fe26a28b5a77b045415f567b3d4&oe=58BB0233"/>
     </div>
-    {% for post in site.posts limit:10 %}
-        <div class="story-frame">
-          {% if post.img %}
-            <div class="post-img" style="
-                  background: url({{ post.img }}) no-repeat center center; 
-                  -webkit-background-size: cover;
-                  -moz-background-size: cover;
-                  -o-background-size: cover;
-                  background-size: cover;">
-            </div>
-          {% endif %}
-          <div class="story">
-            <a href="{{ site.base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
-            <div>
-              <b>{{ post.date | date: "%b %-d, %Y" }}</b>
-            </div>
-            <div style="color: #8e8e8e;">
-              {{ post.short_description }}
-            </div>
-          </div>
-        </div>
-    {% endfor %}
+  <div class="site-title">
+    Harrison Noh
   </div>
-
-  {% include sidebar.html %}
-
+  <hr>
+  <div class="categories row">
+  <!--
+    <div class="md-1-4 category">
+      <a href="">Experience</a>
+    </div>
+    <div class="md-1-4 category">
+      <a href="">Projects</a>
+    </div>
+    <div class="md-1-4 category">
+      <a href="">Design</a>
+    </div>
+    <div class="md-1-4 category">
+      <a href="">Contact</a>
+    </div>-->
   </div>
-
-<div style="clear: both;"></div> 
-<script src="{{ site.base}}/script/main.js"></script>
+  <p>Hi, my name is Harrison Noh. I am currently studying Computer Science at the University of Michigan and am graduating December 2016. I am currently looking for full-time opportunities in software engineering. Last summer, I interned at <a target="_blank" href="https://www.2k.com/">2K Games</a> in Novato, California. Please check out my <a href="/resume">resume</a>!</p>
+  <p>
+    Sorry about the look of the website. I'm currently working on the new iteration of it. If you would like to get in contact with me, please contact me at nohharri@umich.edu.
+  </p>
+  <p style="color: grey">
+    Last updated Nov. 30 2016
+  </p>
+  {% include social.html %}
+</div>
