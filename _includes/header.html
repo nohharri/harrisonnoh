@@ -1,17 +1,15 @@
-<div id="header">
-  <a href="{{ site.base }}/"><img id="logo" src="{{ site.base }}/assets/img/harrison_logo.png" width="180px"></a>
-  <div id="toolbar">
-    <span class='header-links'><a href="{{ site.base }}/resume/">resume</a> &nbsp</span>
-    <span class='header-links'><a href="{{ site.base }}/blog/">blog</a> &nbsp</span>
-    <span class='header-links'><a href="{{ site.base }}/contact/">contact</a> &nbsp</span>
-  </div>
+<div class="header">
+  <a href="/">
+  	<div class="title">
+    	Harrison Noh
+  	</div>
+  </a>
+  {% if page.path != "index.html" %}
+  	<div class="navbar">
+  		<a href="/work/"><div>work</div></a>
+  		<a href="/projects/"><div>projects</div></a>
+  		<a href="http://nohharri.myportfolio.com" target="_blank"><div>gallery</div></a>
+  		<a href="/contact/"><div>contact</div></a>
+  	</div>
+  {% endif %}
 </div>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=180201262346461";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>

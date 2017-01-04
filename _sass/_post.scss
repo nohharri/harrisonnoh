@@ -1,0 +1,136 @@
+.post-img {
+  width: 90px;
+  height: 90px;
+  margin: 5px auto;
+}
+
+.post-img-frame {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: $grey-color-light;
+}
+
+.post {
+  height: 100px;
+}
+
+.story {
+  padding-left: 10px;
+  float: left;
+  height: 100%;
+  width: calc(100% - 10px - 100px);
+}
+
+.story-title {
+  margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.story-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+}
+
+.post-date {
+  color: $grey-color;
+}
+
+.post-tools {
+  margin-top: 15px;
+}
+
+$angular2-color: #d83a3a;
+$aspnet-color: #42b6ff;
+$csharp-color: #993cfc;
+$cpp-color: #6ba3ff;
+$css-color: #2ba1ef;
+$lua-color: #2a45dd;
+$node-color: #ace55b;
+$perforce-color: #e8ae1b;
+$php-color: #899fff;
+$typescript-color: #3da7ff;
+$unity-color: #2d3849;
+$visualstudio-color: #944ca3;
+$javascript-color: #e5c95b;
+$games-color: #b06bf9;
+$html5-color: #ce651a;
+$photoshop-color: #1eafdb;
+
+.tool {
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 200%;
+
+  &.angular2 {
+    background-color: $angular2-color;
+    &:hover { background-color: darken($angular2-color, 10%); }
+  }
+  &.aspnet {
+    background-color: $aspnet-color;
+    &:hover { background-color: darken($aspnet-color, 10%); }
+  }
+  &.csharp {
+    background-color: $csharp-color;
+    &:hover { background-color: darken($csharp-color, 10%); }
+  }
+  &.cpp {
+    background-color: $cpp-color;
+    &:hover { background-color: darken($cpp-color, 10%); }
+  }
+  &.css {
+    background-color: $css-color;
+    &:hover { background-color: darken($css-color, 10%); }
+  }
+  &.lua {
+    background-color: $lua-color;
+    &:hover { background-color: darken($lua-color, 10%); }
+  }
+  &.perforce {
+    background-color: $perforce-color;
+    &:hover { background-color: darken($perforce-color, 10%); }
+  }
+  &.php {
+    background-color: $php-color;
+    &:hover { background-color: darken($php-color, 10%); }
+  }
+  &.typescript {
+    background-color: $typescript-color;
+    &:hover { background-color: darken($typescript-color, 10%); }
+  }
+  &.unity {
+    background-color: $unity-color;
+    &:hover { background-color: darken($unity-color, 10%); }
+  }
+  &.visualstudio {
+    background-color: $visualstudio-color;
+    &:hover { background-color: darken($visualstudio-color, 10%); }
+  }
+  &.nodejs {
+    background-color: $node-color;
+    &:hover { background-color: darken($node-color, 10%); }
+  }
+  &.javascript {
+    background-color: $javascript-color;
+    &:hover { background-color: darken($javascript-color, 10%); }
+  }
+  &.games {
+    background-color: $games-color;
+    &:hover { background-color: darken($games-color, 10%); }
+  }
+  &.html5 {
+    background-color: $html5-color;
+    &:hover { background-color: darken($html5-color, 10%); }
+  }
+  &.photoshop {
+    background-color: $photoshop-color;
+    &:hover { background-color: darken($photoshop-color, 10%); }
+  }
+}

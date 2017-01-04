@@ -1,0 +1,35 @@
+---
+layout: post
+title: 2K Games
+date:   2016-12-29 12:41:00 -0500
+categories: work
+img: https://pbs.twimg.com/profile_images/519904806794571776/ahiBppBE_400x400.png
+short_description: In the summer of 2016, I worked at 2K Games in Novato, California.
+tags: [cpp, lua, php, csharp, aspnet, angular2, typescript, javascript, visualstudio, perforce, html5, css, games, featured]
+tools:
+  - cpp
+  - lua
+  - php
+  - csharp
+  - aspnet
+  - angular2
+  - typescript
+  - javascript
+  - visualstudio
+  - perforce
+  - html5
+  - css
+  - games
+---
+
+In the summer of 2016, I worked at <a href="https://www.2k.com/" target="_blank" class="link">2K Games</a> in Novato, California. There, I had the opportunity to work on Mafia III and the legal asset revision database.
+
+## Mafia III
+
+As a lot of open world games do, there was a lot of <a href="http://www.gameanalytics.com/blog/what-is-game-telemetry.html" target="_blank" class="link">telemetry</a> necessary for the game. While user data provides a lot, there are locations that are not sufficiently tested due to users not gravitating to those locations. Because all areas needed to be tested, another intern and I were responsible for creating an automated testing system that would have an AI run around, engage enemies, and test performance. The engine was writen in C++ with Lua as its scripting language.
+
+## Legal Asset Revision Database
+
+A second project of mine was a web-based one, where I was originally tasked with refactoring poorly implemented legacy code alongside creating and documenting a deployment process. The legal asset revision database was a web tool used to communicated between the legal and production team when assets were used within a game. For example, if a BMW was to be used in Mafia III, then the production team would add the asset to the database for approval from the legal team. A contracted developer wrote the asset database, but with any outside resource, there is always a risk of inconsistency in code and abstraction. For example, the code was written in PHP, an unpopular language within the company (as most developers have worked with exclusively games) and there was no deployment process.
+
+After fixing a majority of the errors, my manager and I agreed that attempting to fix a lot of the security vulenerabilities and flimsy code would prove to be too difficult and ineffective. We ended up scrapping the whole daabase and starting from scratch; one that was written in a game developer-friendly language (C#) and one with a clearly documented deployment process. The interface was proven to improve efficiency while saving the company time and money.

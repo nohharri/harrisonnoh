@@ -26,12 +26,12 @@
 	width: 100%;
 }
 
-.container {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
 .md-1-4 {
 	width: 25%;
+	float: left;
+}
+
+.col-md-3 {
+	width: 30%;
 	float: left;
 }

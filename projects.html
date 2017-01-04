@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /projects/
+---
+
+<div class="container middle-container">
+	<h1>Projects</h1>	
+	<hr>
+
+	<div class="content-container container">
+	  <div class="featured section">
+	    <div class="section-content">
+	      <h1>Featured</h1>
+	      {% include posts.html category="featured_projects" %}
+	    </div>
+	  </div>
+	  <div class="recent section">
+	    <div class="section-content">
+	      <h1>Recent</h1>
+	      {% include posts.html category="projects" %}
+	    </div>
+	  </div>
+	</div>
+</div>

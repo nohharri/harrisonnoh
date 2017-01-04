@@ -10,7 +10,9 @@ title: Harrison's Resume
 
 ------
 
-<a href="/Harrison Noh - Resume.pdf" download>Download Resume</a>
+<div class="button" style="margin-top: 10px; margin-bottom: 10px;">
+	<a href="/Harrison Noh - Resume.pdf" download>Download Resume</a>
+</div>
 
 ---
 
