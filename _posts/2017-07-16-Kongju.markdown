@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Kongju"
+date:   2017-07-15 01:04:00 -0500
+categories: recent
+img: /img/kongju.jpg
+short_description:
+tags: []
+tools:
+---
+
+<div class="inline-center">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/gkIw9ClPUJI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="inline-center">
+	<div class='button'><a target="_blank" href="https://www.dropbox.com/s/gr7m0r9flcx0bmk/Kongju_Final.mov?dl=0">Download Video (3.1 GB) </a></div>
+</div>
+
+<div class="inline-center">
+	<div class='button'><a target="_blank" href="https://www.dropbox.com/s/t0gd2b9svhoiwzl/Kongju.mp3?dl=0">Download Music (4.7 MB) </a></div>
+</div>
