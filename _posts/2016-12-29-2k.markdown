@@ -3,7 +3,7 @@ layout: post
 title: 2K Games
 date:   2016-12-29 12:41:00 -0500
 categories: work
-img: https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/2K-Games-Logo.svg/1200px-2K-Games-Logo.svg.png
+img: /img/mafia.jpg
 short_description: In the summer of 2016, I worked at 2K Games in Novato, California.
 tags: [cpp, lua, php, csharp, aspnet, angular2, typescript, javascript, visualstudio, perforce, html5, css, games, featured]
 tools:
