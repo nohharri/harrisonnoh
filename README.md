@@ -15,3 +15,4 @@ jekyll serve # Starts server locally on localhost:4000
 
 ![webpage 1](img/webpage_screenshot.png)
 ![wepage 2](img/webpage_screenshot_2.png)
+![webpage 3](img/webpage_screenshot_3.png)
