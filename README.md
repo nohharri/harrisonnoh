@@ -10,3 +10,6 @@ jekyll build # Generates the jekyll pages
 
 jekyll serve # Starts server locally on localhost:4000
 ```
+
+# Screenshots
+
