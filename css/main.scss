@@ -3,10 +3,8 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'Lato', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,19 +12,42 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #282828;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+
+// Harrison Variables
+$header-font-size: 20px;
+
+// Colors
+$grey-color: #a0a0a0;
+$grey-color-light: lighten($grey-color, 25%);
+$grey-color-lighter: lighten($grey-color, 35%);
+$grey-color-dark:  darken($grey-color, 30%);
+$grey-color-darker: darken($grey-color, 50%);
+$pink-color: #e519ca;
+$blue-color: #0095ff;
+
+// Fonts
+$francois-font: 'Francois One', sans-serif;
+
+$heading-font: $francois-font;
+
+// Specific
+$social-media-icons-width: 150px;
+
+// Mixins
+@mixin center-block-horizontal() {
+	margin: 0 auto;
+}
 
 
 
@@ -44,10 +65,13 @@ $on-laptop:        800px;
 }
 
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
+        "index",
+        "post",
+        "projects",
+        "style",
         "syntax-highlighting"
 ;

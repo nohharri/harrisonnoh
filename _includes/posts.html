@@ -1,0 +1,61 @@
+{% if include.category == "featured" %}
+  {% assign categories = site.tags.featured %}
+
+{% elsif include.category == "featured_projects" %}
+  {% assign allprojects = site.categories.projects %}
+  {% assign categories = site.array %}
+  {% for category in allprojects %}
+    {% if category.tags contains "featured" %}
+      {% assign categories = categories | push: category %}
+    {% endif %}
+  {% endfor %}
+
+{% elsif include.category == "projects" %}
+  {% assign categories = site.categories.projects %}
+
+{% elsif include.category == "work" %}
+  {% assign categories = site.categories.work %}
+
+{% elsif include.category == "recent" %}
+  {% assign categories = site.posts %}
+
+{% else %}
+  {% assign tag = include.category %}
+  {% assign categories = site.tags[{{tag}}] %}
+
+{% endif %}
+
+
+{% for post in categories limit:20 %}
+  <a href="{{ site.base }}{{ post.url }}">
+    <div class="post">
+        <div class="post-img-frame">
+          <div class="post-img" style="
+                background: url({{ post.img }}) no-repeat center center; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;">
+          </div>
+        </div>
+      <div class="story">
+        <h2 class="story-title">{{ post.title }}</h2>
+        <div class="post-date">
+          <b>{{ post.date | date: "%b %-d, %Y" }}</b>
+        </div>
+        <div class="story-description" style="color: #8e8e8e;">
+          {{ post.short_description }}
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="post-tools">
+    {% for tool in post.tools %}
+      <a href="/tags/{{ tool }}/">
+        <span class="tool {{ tool }}">{{ tool }}</span>
+      </a>
+    {% endfor %}
+  </div>
+  <hr style="margin-top: 10px; margin-bottom: 10px;">
+{% endfor %}
+

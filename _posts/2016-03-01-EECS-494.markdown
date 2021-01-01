@@ -1,30 +1,37 @@
 ---
 layout: post
-title:  "Cool Games I've Made"
+title:  "Computer Game Design and Development"
 date:   2016-03-01 21:07:00 -0500
-categories: code
+categories: projects
 img: /img/puffer_background.jpg
 short_description: In the winter of 2016, I had the pleasure of taking Game Development (EECS 494) with <span class='link'><a target='_blank' href='https://www.linkedin.com/in/jeremyrgibson'>Professor Jeremy Gibson Bond.</a></span> He was certainly one of the best teachers I had at Michigan, taking great interest in his craft...
+tags: [featured, unity, csharp, photoshop, games]
+tools:
+  - unity
+  - csharp
+  - photoshop
+  - games
 ---
 
-<div class='paragraph'>
-	In the winter of 2016, I had the pleasure of taking Game Development (EECS 494) with <span class='link'><a href='https://www.linkedin.com/in/jeremyrgibson' target='blank'>Professor Jeremy Gibson Bond.</a></span> He was certainly one of the best teachers I had at Michigan, taking great interest in his craft and expecting the best out of his students. Through his class, I gained a better understanding of object-oriented programming through the scope of C# and Unity. I could relate to the video game world the most during my student career at the University of Michigan, as my strong belief in user experiences translated well with the immersive interaction people have when playing video games. There are a lot of parallels between user experience design and video game design. They both strive to make an engaging and unique experience to the specific user. I wanted to showcase some of the exciting projects I had the opportunity to make with some great classmates.
-	<br><br>
-	<h2>Legend of Zelda - Classic Game Remake</h2>
-	As an intro to Unity, we were tasked with recreating a classic video game. As one of the options, my partner and I decided to tackle <span class='link'><a target='_blank' href='https://en.wikipedia.org/wiki/The_Legend_of_Zelda'>Legend of Zelda NES.</a></span>
-</div>
+
+In the winter of 2016, I had the pleasure of taking Game Development (EECS 494) with <span class='link'><a href='https://www.linkedin.com/in/jeremyrgibson' target='blank'>Professor Jeremy Gibson Bond.</a></span> He was certainly one of the best teachers I had at Michigan, taking great interest in his craft and expecting the best out of his students. Through his class, I gained a better understanding of object-oriented programming through the scope of C# and Unity. I could relate to the video game world the most during my student career at the University of Michigan, as my strong belief in user experiences translated well with the immersive interaction people have when playing video games. There are a lot of parallels between user experience design and video game design. They both strive to make an engaging and unique experience to the specific user. I wanted to showcase some of the exciting projects I had the opportunity to make with some great classmates.
+<br><br>
+<h2>Legend of Zelda - Classic Game Remake</h2>
+As an intro to Unity, we were tasked with recreating a classic video game. As one of the options, my partner and I decided to tackle <span class='link'><a target='_blank' href='https://en.wikipedia.org/wiki/The_Legend_of_Zelda'>Legend of Zelda NES.</a></span>
+
 
 <img src='http://cdn-r1.unilad.co.uk/wp-content/uploads/2016/02/link-holding-triforce.png' width="100%">
 
-<div class='paragraph'>
-	As it was our first full-fledged game in Unity, we took a lot of time to develop something that seemed initially like a simple game. As a team, there were some creative differences within the group. Meeting up proved to be very difficult, as schedules never lined up and we faced a myriad of merge conflicts. A lot of these debugging errors stemmed from working on the same scene in Unity.
+As it was our first full-fledged game in Unity, we took a lot of time to develop something that seemed initially like a simple game. As a team, there were some creative differences within the group. Meeting up proved to be very difficult, as schedules never lined up and we faced a myriad of merge conflicts. A lot of these debugging errors stemmed from working on the same scene in Unity.
 <br><br>
-	Throughout the project, I was in charge of the movement code and implementing most of the enemies. How we decided to implement the enemies was one of the more difficult part of the project. While inheritence seemed to be a good idea, none of the enemy movements were similar. Some enemies were bound to the grid, while others could move freely. Most of the enemies ended up requiring their own unique code.
-	<br><br>
-	We managed to work through our differences by understanding our common goals. Even though our schedules conflicted and wanted to implement our code differently, we both really pushed to finish the game. You can check out the final product below (works only in Firefox, Safari).
-</div>
+Throughout the project, I was in charge of the movement code and implementing most of the enemies. How we decided to implement the enemies was one of the more difficult part of the project. While inheritence seemed to be a good idea, none of the enemy movements were similar. Some enemies were bound to the grid, while others could move freely. Most of the enemies ended up requiring their own unique code.
+<br><br>
+We managed to work through our differences by understanding our common goals. Even though our schedules conflicted and wanted to implement our code differently, we both really pushed to finish the game. You can check out the final product below (works only in Firefox, Safari).
 
-<div class='play-game'><a href="/games/ZeldaWebBuild.html">Play Game</a></div>
+
+<div class="inline-center">
+	<div class='button'><a href="/games/ZeldaWebBuild.html">Play Zelda</a></div>
+</div>
 
 <div class='paragraph'>
 	<h2>Commuter North</h2>
@@ -35,18 +42,38 @@ short_description: In the winter of 2016, I had the pleasure of taking Game Deve
 	<br><br>
 	From idea conception to implementation, our group of four was able to complete a fun horror game with the playful twist of the environment relating to Michigan. The most important mechanics were disorienting the player through random shifts in the character's position and limiting the user's sight through fog and snow. What I worked on were the text engine and footprints. The footprints were used to lay out a path for the player so the disorientation did not get too heavy. The player can then detect their own footsteps in the snow so they were not to continuously travel an incorrect path. Developing the game was definitely a lot of fun. You can check out the full game below (works only in Firefox, Safari).
 </div>
-<div class='play-game'><a href="/games/Commuter North Web.html">Play Game</a></div>
 
-<div class='paragraph'>
-	<h2>Puffer</h2>
-	I really fell in love with this project. Our third project was to create another rapid prototype with three new partners. Puffer is a game based on a little puffer fish that swells up and sucks up fish to gain their effect, navigating through little puzzles throughout the 2d sidescroller.
-	<br><br>
+<div class="inline-center">
+	<div class="button"><a href="/games/Commuter North Web.html">Play Commuter North</a></div>
 </div>
+
+## Puffer
+ Our third project was to create another rapid prototype with three new partners. Puffer is a game based on a little puffer fish that swells up and sucks up fish to gain their effect, navigating through little puzzles throughout the 2d sidescroller.
+<br><br>
+
 <div>
 	<img src="/img/spritesheet.jpg" width="100%">
 </div>
 <br>
-<div class='paragraph'>
-	I wore many hats, thinking of the core mechanics, programming, and designing all the sprites. Even though it wasn't emphasized, I really wanted to develop a colorful world for the game. The core experience could only be captured through the depiction of bright and unique characters, while trying to convey the abilities of each creature. For example, the electric eel is used to depict something that can't be touched, while the turtle's large and sturdy body conveys its unbreakable shell. The goldfish is smaller than the puffer fish, depicting that the fish can be eaten. An important part of game design is conveying ideas without explicitly saying them and that was the main idea with my sprites. The game is still in development.
+
+I wore many hats, thinking of the core mechanics, programming, and designing all the sprites. Even though it wasn't emphasized, I really wanted to develop a colorful world for the game. The core experience could only be captured through the depiction of bright and unique characters, while trying to convey the abilities of each creature. For example, the electric eel is used to depict something that can't be touched, while the turtle's large and sturdy body conveys its unbreakable shell. The goldfish is smaller than the puffer fish, depicting that the fish can be eaten. An important part of game design is conveying ideas without explicitly saying them and that was the main idea with my sprites. The game is still in development.
+
+<div class="inline-center">
+	<a href="/games/puffer/index.html"><div class="button">Play Puffer</div></a>
 </div>
+
+## Dirtia
+
+Dirtia was our final game for the class. The premise was around a futuristic garbage collecting alien who would go around the planet "Dirtia" and clean up the trash that surrounds the world. The game was made for mobile. A web version has been included here. All music was original and made specifically for our game by Joseph Clemente as a collaboration between the video game design course and the video game music course here at Michigan.
+
+<div class="inline-center">
+<a href="/games/dirtia/index.html"><div class="button">Play Dirtia</div></a>
+</div>
+
+Or if you have an Android device, download it on your phone for the full experience!
+<div class="inline-center">
+<a href="/games/Dirtia.apk" download><div class="button">Download APK</div></a>
+</div>
+
+
 

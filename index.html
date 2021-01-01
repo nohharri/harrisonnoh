@@ -3,48 +3,102 @@ layout: default
 title: Harrison Noh
 ---
 
-<div id="cover">
-  <div id="cover-text-container">
-    <h1 style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #fff; padding-top: 250px;">Hey! Welcome to my website.</h1>
-  </div>
-</div>
-<div class="poly-bg-top">
-  <h2 style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 30px; padding-top: 15px; color: #fff;">What's New</h2>
+<div>
+  {% include social.html %}
 </div>
 
-<div class="main-container">
-  <div class="story-container">
-    <div>
-      <h2 style="margin-left: 4px;  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;">Latest Posts</h2>
-    </div>
-    {% for post in site.posts limit:10 %}
-        <div class="story-frame">
-          {% if post.img %}
-            <div class="post-img" style="
-                  background: url({{ post.img }}) no-repeat center center; 
-                  -webkit-background-size: cover;
-                  -moz-background-size: cover;
-                  -o-background-size: cover;
-                  background-size: cover;">
-            </div>
-          {% endif %}
-          <div class="story">
-            <a href="{{ site.base }}{{ post.url }}"><h2 class="story-title">{{ post.title }}</h2></a>
-            <div>
-              <b>{{ post.date | date: "%b %-d, %Y" }}</b>
-            </div>
-            <div style="color: #8e8e8e;">
-              {{ post.short_description }}
-            </div>
+<div id="index-container">
+  <div class="shoe-container container">
+    <div class="col-md-3">
+      <a href="/work/">
+        <div id="nike-box" class="box-container" style="margin-left: 20px;">
+          <div id="nike-top" class="shoebox top">
+            <figure class="box-left"></figure>
+            <figure class="box-right">
+            </figure>
           </div>
+          <div id="nike-bottom" class="shoebox bottom">
+              <figure class="box-left">
+                <div class="shadow"></div>
+              </figure>
+              <figure class="box-right">
+                <div class="shadow"></div>
+                <img src="img/nike.png" height=80% style="margin-left: 15px; margin-top: 5px;">
+              </figure>
+          </div>
+          <div class="shoebox-section-name">Work</div>
         </div>
-    {% endfor %}
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="/projects/">
+        <div id="adidas-box" class="box-container" style="margin-left: 20px;">
+          <div id="adidas-top" class="shoebox top">
+            <figure class="box-left"></figure>
+            <figure class="box-right">
+              <img src="img/adidas.png" height=100% style="margin-left: 30px;">
+            </figure>
+          </div>
+          <div id="adidas-bottom" class="shoebox bottom">
+              <figure class="box-left">
+                <div class="shadow"></div>
+              </figure>
+              <figure class="box-right">
+                <div class="shadow"></div>
+                <img src="img/adidas.png" height=100% style="margin-left: 20px;">
+              </figure>
+          </div>
+          <div class="shoebox-section-name">Projects</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a target="_blank" href="https://nohharri.myportfolio.com/">
+        <div id="jordan-box" class="box-container" style="margin-left: 20px;">
+          <div id="jordan-top" class="shoebox top">
+            <figure class="box-left"></figure>
+            <figure class="box-right">
+            </figure>
+          </div>
+          <div id="jordan-bottom" class="shoebox bottom">
+              <figure class="box-left" style="overflow: hidden;">
+                <div class="shadow"></div>
+                <img src="img/jordan.png" width="100%">
+              </figure>
+              <figure class="box-right" style="overflow: hidden;">
+                <div class="shadow"></div>
+                <img src="img/jordan.png" width=100%>
+              </figure>
+          </div>
+          <div class="shoebox-section-name">Gallery</div>
+        </div>
+      </a>
+    </div>
   </div>
 
-  {% include sidebar.html %}
+  <div style="clear:both"></div>
 
+  <hr>
+  <div id="side-title" class="side-title"></div>
+  <div style="clear:both;"></div>
+  <hr style="margin-top: 25px;">
+
+  <div class="content-container container">
+    <div class="featured section">
+      <div class="section-content">
+        <h1>Featured</h1>
+        {% include posts.html category="featured" %}
+      </div>
+    </div>
+    <div class="recent section">
+      <div class="section-content">
+        <h1>Recent</h1>
+        {% include posts.html category="recent" %}
+      </div>
+    </div>
   </div>
+</div>
 
-<div style="clear: both;"></div> 
-<script src="{{ site.base}}/script/main.js"></script>
+<script src="script/index.js"></script>

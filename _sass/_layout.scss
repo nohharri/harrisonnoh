@@ -1,28 +1,85 @@
 /**
  * Site header
  */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+.header {
+    background-color: $grey-color-light;
+    font-weight: lighter;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
+    .title {
+        text-transform: uppercase;
+        color: $grey-color;
+        font-size: 20px;
+        line-height: 40px;
+        white-space: nowrap;
+        display: inline-block;
+        width: 200px;
+    }
 
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    .navbar {
+        float: right;
+        font-size: 20px;
+        color: $grey-color;
+        margin-right: 15px; //weird hack dont know why i have to do this
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+        div {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        a {
+            &:hover {
+                color: $pink-color;
+            }
+        }
     }
 }
+
+// Social Media (left)
+.social-media-icons {
+    position: fixed;
+    top: 50px;
+    padding-left: 5px;
+    background-color: white;
+    height: 100%;
+    width: $social-media-icons-width;
+    border-right: 1px solid $grey-color-light;
+    z-index: 3;
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        img {
+            width: 35px;
+            filter: grayscale(100%);
+            opacity: 0.5;
+            transition: all 0.2s ease;
+        }
+
+        span {
+            color: $grey-color;
+        }
+
+        &:hover img,
+        &:hover span {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+}
+
 
 .site-nav {
     float: right;
@@ -185,8 +242,8 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
     color: $grey-color;
+    text-align: center;
 }
 
 .post-link {
@@ -239,4 +296,34 @@
             font-size: 18px;
         }
     }
+}
+
+.middle-container {
+    margin: 0 auto;
+}
+
+.inline-center {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.button {
+    cursor: pointer;
+    color: white;
+    padding: .61538462em 1em;
+    background-color: $blue-color;
+    border: 1px solid #07c;
+    border-color: #07c;
+    box-shadow: inset 0 1px 0 #66bfff;
+    display: inline-block;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: darken($blue-color, 10%);
+    }
+}
+
+.link {
+    color: $pink-color;
 }

@@ -2,46 +2,30 @@
 layout: default
 permalink: /post/ 
 ---
-<!--
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-  <div class="fb-comments" data-href="{{site.url}}{{page.url}}" data-width="100%" data-numposts="5"></div>
-
-</article>-->
-
-<div>
-	{% if page.img %}
-		<div id='cover-photo' style="
-	              background: url({{ page.img }}) no-repeat center center; 
-	              -webkit-background-size: cover;
-	              -moz-background-size: cover;
-	              -o-background-size: cover;
-	              background-size: cover;
-	              color: #fff">
-			<h1 style='padding-left: 4px;'>{{ page.title }}</h1>
-		</div>
-	{% else %}
-		<div>
-			<h1 style="text-align: center;">{{ page.title }}</h1>
-		</div>
-	{% endif %}
-	<div class='paragraph'>
-		
-		<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-	</div>
+<div class='container middle-container'>
+	<h1 style="text-align: center;">{{ page.title }}</h1>
+	<hr>
+	<p class="post-meta">
+		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}
+		</time>
+		{% if page.author %} • 
+			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<span itemprop="name">{{ page.author }}</span>
+			</span>
+		{% endif %}
+	</p>
 
 	{{ content }}
 
-	<div class='paragraph'>
-		<div class="fb-comments" data-href="{{site.url}}{{page.url}}" data-width="100%" data-numposts="5"></div>
-	</div>
+	<hr>
+	<div class="post-tools">
+    {% for tool in page.tools %}
+      <a href="/tags/{{ tool }}/">
+        <span class="tool {{ tool }}">{{ tool }}</span>
+      </a>
+    {% endfor %}
+  	</div>
+
 </div>

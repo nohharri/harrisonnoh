@@ -1,0 +1,37 @@
+/**
+ * Splash page 
+ */
+
+.site-title {
+	text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: $francois-font;
+    @include center-block-horizontal();
+}
+
+.main-container {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.category {
+	text-align: center;
+}
+
+/**
+ * Responsive
+ */
+.row {
+	width: 100%;
+}
+
+.md-1-4 {
+	width: 25%;
+	float: left;
+}
+
+.col-md-3 {
+	width: 30%;
+	float: left;
+}
