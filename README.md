@@ -13,3 +13,5 @@ jekyll serve # Starts server locally on localhost:4000
 
 # Screenshots
 
+![webpage 1](img/webpage_screenshot.png)
+![wepage 2](img/webpage_screenshot.png)
